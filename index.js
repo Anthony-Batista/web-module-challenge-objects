@@ -8,10 +8,14 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 
 function createMenuItem(name, price, category){
     
-    /* Code here */
+    
 }
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
+
+
+
+
 
 
 
@@ -25,7 +29,14 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
-
+function discount(string) {
+  if (string == 'teacher' || string == 'student') {
+    console.log(burger.price-(burger.price*.25))
+  } else {
+    console.log(burger.price-(burger.price *.1))
+  }
+}
+discount('student')
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -41,15 +52,37 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 3: Console.log just Julius' feedback */
 
+console.log(reviews[5].feedback)
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+
+
+
+
+
+
+
+
+
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
+
+
+
+
+
+
+
+
+
+
+
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
- Your function should take two arguments:
+
+Your function should take two arguments:
 
 (1) an array which holds all of the reviews
 (2) a number which is the desired index in the array.
@@ -64,6 +97,16 @@ function getReviewByIndex(reviews, index) {
   }
   
 
+
+
+
+
+
+
+
+
+
+
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
 getLastReview should accept:
@@ -76,6 +119,26 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 function getLastReview(/* code here */) {
     /* code here */
   } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
@@ -126,10 +189,10 @@ Your function should accept:
 and return an object.
 
 The returned object should have the following characteristics:
-     it has an `odometer` property that contains the argument passed in.
-     it has a `drive` method that takes a distance as its argument, and
-         (1) causes the odometer in the object to be increased by the distance,
-         (2) returns the updated value of the `odometer`.
+      it has an `odometer` property that contains the argument passed in.
+      it has a `drive` method that takes a distance as its argument, and
+          (1) causes the odometer in the object to be increased by the distance,
+          (2) returns the updated value of the `odometer`.
 */
 
 
